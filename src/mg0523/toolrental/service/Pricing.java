@@ -22,6 +22,11 @@ public final class Pricing {
 	
 	private Pricing() { }
 	
+	/**
+	 * Looks up and returns the pricing data for a given tool type.
+	 * @param toolType
+	 * @return PricingData
+	 */
 	public static PricingData getPricingByToolType(String toolType) {
 		if (!Pricing.PRICING_BY_TOOL.containsKey(toolType)) {
 			throw new RuntimeException("404: No data available for tool of type " +  toolType + ".");

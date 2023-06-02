@@ -96,9 +96,9 @@ public class RentalService {
 	
 	/**
 	 * Rounds a value at two decimal places.
-	 * Low level alternative ((int) (value * 100 + 0.5)) / 100.0
+	 * 
 	 * @param value
-	 * @return
+	 * @return rounded value
 	 */
 	private double round(double value) {
 		return Math.round(value * 100) / 100.0;
